@@ -1,0 +1,59 @@
+body {
+
+    background-color: gold;
+    font-family: poppins;
+    margin: 20px;
+}
+input {
+    margin-bottom: 10px;
+}
+button {
+    margin-top: 10px;
+}
+.output {
+    margin-top: 20px;
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+.titi h1 {
+    font-size: 190;
+    text-align: center;
+}
+
+/* Print-specific styling */
+@media print {
+   
+    .output1 * {
+        visibility:hidden;
+    }
+    .info * {
+        visibility:hidden;
+    }
+    .titi h1{
+        visibility:hidden;
+    }
+    body * {
+        visibility: hidden; /* Hide everything initially */
+    }
+    .output, .output * {
+        visibility: visible; /* Show the tables and relevant content */
+    }
+    .output {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ensure it takes up the full width when printing */
+    }
+    button {
+        display: none; /* Hide buttons when printing */
+    }
+}

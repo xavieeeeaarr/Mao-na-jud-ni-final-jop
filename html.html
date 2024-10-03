@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Sorter with Honors and Print Option</title>
+    <link rel="stylesheet" href="wawaw.css">
+</head>
+<body>
+
+<h1 class="titi">Student Grade Sorter</h1>
+<div class="info">
+    <label class="Nem" for="studentName">Student Name:</label>
+    <input type="text" id="studentName" placeholder="Enter student name"><br>
+    <label for="averageGrade">Average Grade:</label>
+    <input type="number" id="averageGrade" placeholder="Enter average grade" step="0.01"><br>
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="sortStudents()">Sort by Grade</button>
+</div>
+
+<div class="output1">
+    <h2>Highest Grade</h2>
+    <table id="highestGradeTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Average Grade</th>
+                <th>Placement</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div class="output">
+    <h2>Sorted Student List with Honors</h2>
+    <table id="honorsTable">
+        <thead>
+            <tr>
+                <th>Placement</th>
+                <th>Name</th>
+                <th>Average Grade</th>
+                <th>Honor</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button onclick="printPage()">Print List</button>
+</div>
+
+<script src="jsjs.js" defer></script>
+
+</body>
+</html>
